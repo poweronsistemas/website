@@ -1,0 +1,198 @@
+/* 
+    Created on : 21 sep. 2020, 21:25:23
+    Author     : Lucas Sosa
+*/
+.whatsapp-button {
+    width: 65px;
+    height: 65px;
+    position: fixed;
+    right: 101px;
+    bottom: 15px;
+    z-index: 30;
+    display: none;
+}
+.whatsapp-button img {
+    width: 100%;
+}
+
+.whatsapp-button.static {
+    position: absolute;
+    right: 75px;
+    bottom: 80px;
+    z-index: 30;
+}
+
+.header-video-background-container {
+    width: 100%;
+    display: block;
+    min-height: 500px;
+    top: -36px;
+    position: relative;
+    box-sizing: border-box;
+    z-index: 20;
+    box-shadow: 0px 0px 4px #000;
+    height: 500px;
+    overflow: hidden;
+}
+.header-video-background-container .header-video-background {
+    width: 100%;
+}
+.header-video-background-container .text-header-container {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    height: 100px;
+    margin-top: -50px!important;
+}
+.header-video-background-container .text-header-container .header {
+    text-shadow: 1px 1px 2px black;
+    font-size: 60px;
+}
+.header-video-background-container .text-header-container .header .sub.header {
+    text-shadow: 1px 1px 2px black;
+    font-size: 30px;
+}
+
+.services-summary .ui.card .image {
+    background-color: #29251f!important;
+    padding: 50px!important;
+}
+
+.middle-block-message {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-size: 1.5em;
+    box-shadow: 0px 0px 4px #000;
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+    margin-top: 40px;
+    position: relative;
+}
+.middle-block-message .blue-circle {
+    width: 30px;
+    height: 30px;
+    background-color: #0573ba;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 4;
+    bottom: 8px;
+    transition: linear .3s;
+}
+.middle-block-message .blue-circle.position1 {
+    left: 12.5%;
+    margin-left: -26px;
+}
+.middle-block-message .blue-circle.position2 {
+    left: 38.5%;
+    margin-left: -32px;
+}
+.middle-block-message .blue-circle.position3 {
+    left: 63.5%;
+    margin-left: -25px;
+}
+.middle-block-message .blue-circle.position4 {
+    left: 88.5%;
+    margin-left: -18px;
+}
+
+.middle-block-message i {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+.middle-block-message .column {
+    position: relative;
+}
+.middle-block-message .column a {
+    color: #29251f;
+    cursor: pointer;
+}
+.middle-block-message .column a:hover {
+    color: #0573ba;
+}
+
+.middle-block-message .column .middle-block-circle {
+    position: absolute;
+    left: 50%;
+    bottom: -33px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 4px #000;
+    background-color: #d3d3d3;
+    margin-left: -20px;
+    z-index: 2;
+}
+
+.middle-block-message .middle-block-connector {
+    position: absolute;
+    left: 12.5%;
+    bottom: 13px;
+    width: 75%;
+    height: 20px;
+    box-shadow: inset 0px 0px 4px #000;
+    background-color: #d3d3d3;
+    z-index: 1;
+}
+.middle-block-message .middle-block-connector-hidder {
+    position: absolute;
+    left: 12.5%;
+    bottom: 15px;
+    width: 75%;
+    height: 16px;
+    background-color: #d3d3d3;
+    z-index: 3;
+}
+.home-contact {
+    padding: 80px!important;
+    background-color: #98cdef!important;
+    width: 100%!important;
+    box-sizing: border-box!important;
+    margin-bottom: 0px!important;
+    margin-top: 50px!important;
+    border-radius: 0!important;
+    box-shadow: 0!important;
+    border: 0!important;
+}
+.home-contact .ui.grid .column {
+    position: relative;
+}
+
+.middle-block-content {
+    position: relative;
+    margin-top: 30px!important;
+}
+.middle-block-content .list .item{
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 520px) {
+    .home-contact {
+        padding: 10px!important;
+    }
+    .middle-block-circle, .middle-block-connector, .middle-block-connector-hidder, .blue-circle {
+        display: none;
+    }
+    .middle-block-content .ui.list .item {
+        font-size: 1.1em;
+    }
+    .header-video-background-container {
+        height: 200px;
+        min-height: 200px;
+        top: 0;
+        margin-bottom: 25px;
+    }
+    .text-header-container {
+        
+    }
+    .text-header-container .ui.header {
+        font-size: 1em;
+    }
+    .text-header-container .ui.header .sub.header {
+        font-size: 1em;
+    }
+}
