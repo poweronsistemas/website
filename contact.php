@@ -18,7 +18,7 @@ if (filter_input(INPUT_POST, 'email')) {
     $message = trim(filter_input(INPUT_POST, 'message'));
     $recaptchaResult = filter_input(INPUT_POST, 'g-recaptcha-response');
     $recaptchaUrl = 'https://www.google.com/recaptcha/api/siteverify';
-    $recaptchaKey = '****************************';
+    $recaptchaKey = '******************';
     $location = filter_input(INPUT_POST, 'location') == 'index' ? 'index' : 'contact';
     $data = [
         'secret' => $recaptchaKey,
@@ -66,9 +66,9 @@ if (filter_input(INPUT_POST, 'email')) {
     $mail->SMTPAuth = true;
     $mail->Port = 465;
     $mail->SMTPSecure = 'ssl';
-    $mail->Host = '*******'; 
+    $mail->Host = '**********'; 
     $mail->Username = 'consultas@poweronsistemas.com.ar'; 
-    $mail->Password = '********';
+    $mail->Password = '**************';
 
     $mail->setFrom($email, $name);
     $mail->addAddress('consultas@poweronsistemas.com.ar', 'PowerOn Sistemas');
@@ -96,9 +96,9 @@ if (filter_input(INPUT_POST, 'email')) {
             $mail->SMTPAuth = true;
             $mail->Port = 465;
             $mail->SMTPSecure = 'ssl';
-            $mail->Host = '*************'; 
+            $mail->Host = '********'; 
             $mail->Username = 'consultas@poweronsistemas.com.ar'; 
-            $mail->Password = '******';
+            $mail->Password = '**************';
 
             $mail->setFrom('consultas@poweronsistemas.com.ar', 'PowerOn Sistemas');
             $mail->addAddress($email, $name);
